@@ -14,7 +14,7 @@ RUN mvn package
 
 #Run
 
-FROM azoncorretto:8-alpine
+FROM amazoncorretto:8-alpine
 
 EXPOSE 8080
 
