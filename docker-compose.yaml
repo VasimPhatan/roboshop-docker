@@ -16,6 +16,21 @@ services:
       - roboshop
     depends_on:
       - mongodb
+   
+  user:
+    image: user:v1
+    conatiner_name: user
+    networks:
+      - roboshop
+    depends_on:
+      - redis
+      - mongodb
+    
+    redis:
+    image: redis:v1
+    container_name: redis
+    networks:
+      - roboshop
       
   web:
     image: web:v1
