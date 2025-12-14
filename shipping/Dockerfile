@@ -10,8 +10,7 @@ RUN mvn package
 
 #Run
 
-FROM openjdk:18-ea-jdk-alpine3.14
-
+FROM openjdk:8u212-jdk-alpine3.9
 EXPOSE 8080
 
 WORKDIR /opt/shipping
