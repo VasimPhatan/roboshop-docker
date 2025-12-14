@@ -11,8 +11,11 @@ RUN mvn dependency:resolve
 COPY src /opt/shipping/src/
 RUN mvn package
 
-
+#
 #Run
+#
+
+
 
 FROM openjdk:8-jdk
 
