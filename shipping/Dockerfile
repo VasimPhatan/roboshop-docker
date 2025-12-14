@@ -14,7 +14,7 @@ RUN mvn package
 
 #Run
 
-FROM eclipse-temurin:8-jre-alpine
+FROM azoncorretto:8-alpine
 
 EXPOSE 8080
 
