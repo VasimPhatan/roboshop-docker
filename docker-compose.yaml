@@ -55,6 +55,13 @@ services:
     networks:
       - roboshop
 
+  rabbitmq:
+    image: rabbimq:v1
+    container_name: rabbitmq
+    networks:
+      - roboshop
+    
+
 
       
   web:
