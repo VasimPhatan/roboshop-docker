@@ -2,8 +2,8 @@
 # FROM maven AS build
 
 # RUN apt-get update -y && apt-get -y install maven
-FROM maven AS build
-
+FROM  debain:10 AS build
+RUN apt-get update -y && apt-get -y install maven
 WORKDIR /opt/shipping
 
 COPY pom.xml /opt/shipping/
