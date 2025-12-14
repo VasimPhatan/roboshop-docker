@@ -33,12 +33,29 @@ services:
       - roboshop
     depends_on:
       - redis
+  
+  shipping:
+    image: shipping:v1
+    container_name: shipping
+    networks:
+      - roboshop
+    depends_on:
+      - mysql
+      
     
   redis:
     image: redis:v1
     container_name: redis
     networks:
       - roboshop
+
+  mysql:
+    image: mysql:v1
+    conainer_name: mysql
+    networks:
+      - roboshop
+
+
       
   web:
     image: web:v1
