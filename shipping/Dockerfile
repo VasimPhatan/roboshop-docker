@@ -10,7 +10,7 @@ RUN mvn package
 
 #Run
 
-FROM openjdk:8-jre-alpine3.9
+FROM openjdk:18-ea-jdk-alpine3.14
 
 EXPOSE 8080
 
